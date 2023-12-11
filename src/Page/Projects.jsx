@@ -2,15 +2,13 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export const Projects = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleCarouselChange = (index) => {
-    // Update the selected index when the first carousel changes
     setSelectedIndex(index);
   };
-
-  console.log(selectedIndex);
   return (
     <>
       <div className={"bg-black "}>
@@ -36,61 +34,81 @@ export const Projects = () => {
               I had the pleasure of working with these awesome projects
             </p>
           </div>
-          <div className={"flex items-center"}>
-            <div
-              style={{
-                background: "url('https://i.ibb.co/nD9zTJH/Dual-screen.png')",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                width: "580px",
-                height: "750px",
-                margin: "auto",
-              }}
-            >
-              {" "}
-              <Carousel
-                showThumbs={false}
-                selectedItem={selectedIndex}
-                onChange={handleCarouselChange}
-              >
-                <div>
-                  <LazyLoadImage src="https://i.ibb.co/3RwbR1C/5319bec7c7a07dcd80b43f8ee4b76779.jpg" />
+          <div className={"flex gap-14 mt-10 px-32 "}>
+            <div className="flex flex-col items-center bg-black  border border-red-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <LazyLoadImage
+                className="object-cover ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src="https://i.ibb.co/R9tgnFD/Screenshot-2023-12-12-034147.png"
+                alt=""
+              />
+              <div>
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                  <h5 className="mb-2 text-2xl text-white font-tomorrow font-bold tracking-tight  dark:text-white">
+                    Blaze Edu
+                  </h5>
+                  <p className="mb-3 font-normal text-white font-robotSlab  dark:text-gray-400">
+                    A Educational Website using ReactJS, NodeJS, ExpressJS,
+                    mongoDB, firebase
+                  </p>
                 </div>
                 <div>
-                  <LazyLoadImage src="https://i.ibb.co/c1LvPLZ/Screenshot-263.png" />
+                  <Link to={"https://blaze-edu.web.app/"}>
+                    <button className="bg-red-600 font-tomorrow mb-8 ml-4  text-white font-bold py-2 px-4 rounded">
+                      Live Link
+                    </button>
+                  </Link>
                 </div>
-                <div>
-                  <LazyLoadImage src="https://i.ibb.co/QnR3yLQ/pexels-photo-614810.webp" />
-                </div>
-              </Carousel>
+              </div>
             </div>
-            <div
-              style={{
-                background: "url('https://i.ibb.co/S3yRJWj/Dual-screen.png')",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                width: "650px",
-                height: "650px",
-                margin: "auto",
-              }}
-            >
-              <Carousel
-                showThumbs={false}
-                selectedItem={selectedIndex}
-                onChange={handleCarouselChange}
-              >
-                <div>
-                  <LazyLoadImage src="https://i.ibb.co/3RwbR1C/5319bec7c7a07dcd80b43f8ee4b76779.jpg" />
+            <div className="flex flex-col items-center bg-black  border border-red-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <LazyLoadImage
+                className="object-cover ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src="https://i.ibb.co/37gfR4D/Screenshot-2023-12-12-045621.png"
+                alt=""
+              />
+              <div>
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                  <h5 className="mb-2 text-2xl font-tomorrow text-white font-bold tracking-tight  dark:text-white">
+                    Flixify
+                  </h5>
+                  <p className="mb-3 font-normal font-robotSlab text-white  dark:text-gray-400">
+                    A Entertainment Website using ReactJS, NodeJS, ExpressJS,
+                    mongoDB, firebase
+                  </p>
                 </div>
                 <div>
-                  <LazyLoadImage src="https://i.ibb.co/c1LvPLZ/Screenshot-263.png" />
+                  <Link to={"https://flixify-portfolio.netlify.app/"}>
+                    <button className="bg-red-600 font-tomorrow mb-8 ml-4  text-white font-bold py-2 px-4 rounded">
+                      Live Link
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center bg-black  border border-red-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <LazyLoadImage
+                className="object-cover ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src="https://i.ibb.co/84XvV7v/Screenshot-2023-12-12-045803.png"
+                alt=""
+              />
+              <div>
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                  <h5 className="mb-2 text-2xl font-tomorrow text-white font-bold tracking-tight  dark:text-white">
+                    Donation
+                  </h5>
+                  <p className="mb-3 font-robotSlab font-normal text-white  dark:text-gray-400">
+                    A Donation Website using ReactJS, NodeJS, ExpressJS,
+                    mongoDB, firebase
+                  </p>
                 </div>
                 <div>
-                  <LazyLoadImage src="https://i.ibb.co/QnR3yLQ/pexels-photo-614810.webp" />
+                  <Link to={"https://empower-aid.netlify.app/"}>
+                    <button className="bg-red-600 font-tomorrow mb-8 ml-4  text-white font-bold py-2 px-4 rounded">
+                      Live Link
+                    </button>
+                  </Link>
                 </div>
-              </Carousel>
+              </div>
             </div>
           </div>
         </div>
