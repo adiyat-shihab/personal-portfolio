@@ -13,6 +13,8 @@
 
 .clip {
     clip-path: polygon(100% 1%, 100% 94%, 94% 100%, 0 100%, 0 0);
+}.clipButton {
+   clip-path: polygon(0 0, 100% 1%, 100% 70%, 84% 100%, 0 100%, 0% 50%);
 }
 
 @keyframes shake {
