@@ -5,7 +5,7 @@ export const Banner = () => {
     <>
       <div
         className={
-          "flex justify-between bg-black items-center py-[11.5rem] px-[9.25rem]"
+          "flex justify-between bg-black items-center py-[11.7rem] px-[9.25rem]"
         }
         style={{
           background:
@@ -21,21 +21,22 @@ export const Banner = () => {
             }
           >
             Hi there <br /> I'M{" "}
-            <span className={"effectName"}>Adiyat Shihab</span>
+            <span className={" text-red-600"}>Adiyat Shihab</span>
           </h1>
           <h2
             className={
               " uppercase mt-4 font-bold font-tomorrow text-5xl text-white"
             }
           >
-            I'm frontend Web Developer
+            frontend Web Developer
           </h2>
         </div>
-        <div className={" border-b-8 border-r-8 border-red-500"}>
+        <div className={" bg-red-500 pr-4 pb-4 clip   "}>
           <LazyLoadImage
+            className={"clip"}
             height={100}
             width={600}
-            src={"https://i.ibb.co/YP9sVHB/IMG-20230218-152950-min.jpg"}
+            src={"https://i.ibb.co/xDYHc5s/IMG-20230218-152950-min-min.jpg"}
           />
         </div>
       </div>
