@@ -4,6 +4,7 @@ import { Banner } from "./Page/Banner.jsx";
 import { Suspense } from "react";
 import { Loading } from "./Page/Loading.jsx";
 import { Skills } from "./Page/Skills.jsx";
+import { Projects } from "./Page/Projects.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </Suspense>
       <Banner />
       <Skills />
+      <Projects />
     </>
   );
 }
