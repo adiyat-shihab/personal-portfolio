@@ -17,7 +17,7 @@ export const Banner = () => {
         <div>
           <h1
             className={
-              " font-bold font-tomorrow text-5xl uppercase leading-[80px] text-white"
+              " heading font-bold font-tomorrow text-5xl uppercase leading-[80px] text-white"
             }
           >
             Hi there <br /> I'M{" "}
@@ -36,7 +36,9 @@ export const Banner = () => {
             className={"clip"}
             height={100}
             width={600}
-            src={"https://i.ibb.co/xDYHc5s/IMG-20230218-152950-min-min.jpg"}
+            src={
+              "https://i.ibb.co/FqfPqL4/Optimized-IMG-20230218-152950-min-min-1.jpg"
+            }
           />
         </div>
       </div>
