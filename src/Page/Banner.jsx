@@ -13,7 +13,7 @@ export const Banner = () => {
     <>
       <div
         className={
-          "flex   xl:flex-row justify-between bg-black items-center py-10 xl:py-[11.7rem] px-4 xl:px-[9.25rem]"
+          "flex flex-col gap-14 lg:px-24   lg:flex-row justify-between bg-black items-center py-10 xl:py-[11.7rem] px-4 xl:px-[9.25rem]"
         }
         style={{
           background:
@@ -25,7 +25,7 @@ export const Banner = () => {
         <div>
           <h1
             className={
-              " heading font-bold text-xs font-tomorrow xl:text-5xl uppercase xl:leading-[80px] text-white"
+              " heading font-bold lg:text-3xl  font-tomorrow xl:text-5xl uppercase xl:leading-[80px] text-white"
             }
           >
             Hi there <br /> I'M <br className={"xl:hidden"} />
@@ -57,7 +57,7 @@ export const Banner = () => {
           className={" bg-red-500 pr-[2px] pb-[2px] xl:pr-4 xl:pb-4 clip   "}
         >
           <LazyLoadImage
-            className={"clip w-[100px] xl:w-[600px]"}
+            className={"clip w-[200px] lg:w-[350px] xl:w-[600px]"}
             height={100}
             src={
               "https://i.ibb.co/FqfPqL4/Optimized-IMG-20230218-152950-min-min-1.jpg"

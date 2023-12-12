@@ -1,14 +1,8 @@
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 export const Projects = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const handleCarouselChange = (index) => {
-    setSelectedIndex(index);
-  };
   return (
     <>
       <div className={"bg-black "}>
@@ -34,10 +28,14 @@ export const Projects = () => {
               I had the pleasure of working with these awesome projects
             </p>
           </div>
-          <div className={"flex flex-col xl:flex-row gap-14 mt-10 px-32 "}>
+          <div
+            className={
+              "flex flex-col  lg:items-center xl:flex-row gap-14 mt-10 xl:px-32 "
+            }
+          >
             <div className="flex flex-col items-center bg-black  border border-red-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
               <LazyLoadImage
-                className="object-cover ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                className="object-cover xl:ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                 src="https://i.ibb.co/R9tgnFD/Screenshot-2023-12-12-034147.png"
                 alt=""
               />
@@ -62,7 +60,7 @@ export const Projects = () => {
             </div>
             <div className="flex flex-col items-center bg-black  border border-red-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
               <LazyLoadImage
-                className="object-cover ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                className="object-cover xl:ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                 src="https://i.ibb.co/37gfR4D/Screenshot-2023-12-12-045621.png"
                 alt=""
               />
@@ -87,7 +85,7 @@ export const Projects = () => {
             </div>
             <div className="flex flex-col items-center bg-black  border border-red-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
               <LazyLoadImage
-                className="object-cover ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                className="object-cover xl:ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                 src="https://i.ibb.co/84XvV7v/Screenshot-2023-12-12-045803.png"
                 alt=""
               />

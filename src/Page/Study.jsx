@@ -1,12 +1,14 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
 export const Study = () => {
   return (
     <>
       <div className={"bg-black "}>
         <div className={"border-t-[5px] border-red-600 mx-20  "}></div>
         <div className={"flex-col flex items-center  justify-center"}>
-          <h1 className={"font-tomorrow font-bold mt-6 text-white text-[4rem]"}>
+          <h1
+            className={
+              "font-tomorrow font-bold mt-6 px-4 text-white text-[4rem]"
+            }
+          >
             Study Details
           </h1>
           <svg
@@ -22,7 +24,9 @@ export const Study = () => {
             />
           </svg>
         </div>
-        <div className={"p-8  bg-black  py-32 xl:px-44 text-white"}>
+        <div
+          className={"p-8  bg-black  py-32 px-4 lg:px-20 xl:px-44 text-white"}
+        >
           <ol className="relative border-s border-red-600 font-robotSlab dark:border-gray-700">
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-red-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>

@@ -25,7 +25,7 @@ export const Skills = () => {
         </div>
         <div
           className={
-            "bg-red-600 w-[18rem]  py-4 px-2 flex flex-col items-center mx-auto mt-[5rem] rounded border-l-4 border-red-400 "
+            "bg-red-600 lg:w-[18rem]  py-4 px-2 flex flex-col items-center mx-auto mt-[5rem] rounded border-l-4 border-red-400 "
           }
         >
           <svg
@@ -48,33 +48,33 @@ export const Skills = () => {
         </div>
         <div
           className={
-            "flex items-center justify-center xl:gap-[8rem] py-[5.63rem]"
+            "flex items-center gap-3 justify-center xl:gap-[8rem] py-[5.63rem]"
           }
         >
           <LazyLoadImage
             height={100}
-            className={"xl:w-[9rem] w-[1rem]"}
+            className={"xl:w-[9rem] w-[4rem]"}
             src={
               "https://seeklogo.com/images/M/mongodb-logo-D13D67C930-seeklogo.com.png"
             }
           />
           <LazyLoadImage
             height={100}
-            className={"xl:w-[9rem] w-[1rem]"}
+            className={"xl:w-[9rem] w-[4rem]"}
             src={
               "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png"
             }
           />
           <LazyLoadImage
             height={100}
-            className={"xl:w-[9rem] w-[1rem]"}
+            className={"xl:w-[9rem] w-[4rem]"}
             src={
               "https://assets-global.website-files.com/62038ffc9cd2db4558e3c7b7/623b38335c7b880db9eff54d_react.svg"
             }
           />
           <LazyLoadImage
             height={100}
-            className={"xl:w-[9rem] w-[1rem]"}
+            className={"xl:w-[9rem] w-[4rem]"}
             src={
               "https://i.ibb.co/r4g6Bqg/png-transparent-circle-js-node-node-js-programming-round-icon-popular-services-brands-vol-icon-remov.png"
             }
