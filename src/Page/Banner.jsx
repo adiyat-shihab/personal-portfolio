@@ -13,7 +13,7 @@ export const Banner = () => {
     <>
       <div
         className={
-          "flex justify-between bg-black items-center py-[11.7rem] px-[9.25rem]"
+          "flex   xl:flex-row justify-between bg-black items-center py-10 xl:py-[11.7rem] px-4 xl:px-[9.25rem]"
         }
         style={{
           background:
@@ -25,18 +25,18 @@ export const Banner = () => {
         <div>
           <h1
             className={
-              " heading font-bold font-tomorrow text-5xl uppercase leading-[80px] text-white"
+              " heading font-bold text-xs font-tomorrow xl:text-5xl uppercase xl:leading-[80px] text-white"
             }
           >
-            Hi there <br /> I'M{" "}
+            Hi there <br /> I'M <br className={"xl:hidden"} />
             <span className={" text-red-600"}>Adiyat Shihab</span>
           </h1>
           <h2
             className={
-              " uppercase mt-4 font-bold font-tomorrow text-5xl text-white"
+              " uppercase mt-4 font-bold font-tomorrow text-xs xl:text-5xl text-white"
             }
           >
-            frontend Web Developer
+            frontend <br className={"xl:hidden"} /> Web Developer
           </h2>
           <Link
             to={
@@ -45,7 +45,7 @@ export const Banner = () => {
           >
             <button
               className={
-                "bg-red-600 clipButton font-medium font-tomorrow py-6 px-6 text-xl mt-6 text-white "
+                "bg-red-600 clipButton font-medium font-tomorrow xl:py-6 xl:px-6 text-xs px-2 py-2 xl:text-xl mt-6 text-white "
               }
               onClick={() => setLoaded(true)}
             >
@@ -53,11 +53,12 @@ export const Banner = () => {
             </button>
           </Link>
         </div>
-        <div className={" bg-red-500 pr-4 pb-4 clip   "}>
+        <div
+          className={" bg-red-500 pr-[2px] pb-[2px] xl:pr-4 xl:pb-4 clip   "}
+        >
           <LazyLoadImage
-            className={"clip"}
+            className={"clip w-[100px] xl:w-[600px]"}
             height={100}
-            width={600}
             src={
               "https://i.ibb.co/FqfPqL4/Optimized-IMG-20230218-152950-min-min-1.jpg"
             }

@@ -22,7 +22,7 @@ export const Study = () => {
             />
           </svg>
         </div>
-        <div className={"p-8  bg-black  py-32 px-44 text-white"}>
+        <div className={"p-8  bg-black  py-32 xl:px-44 text-white"}>
           <ol className="relative border-s border-red-600 font-robotSlab dark:border-gray-700">
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-red-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>

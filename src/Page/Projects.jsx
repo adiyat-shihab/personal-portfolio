@@ -34,7 +34,7 @@ export const Projects = () => {
               I had the pleasure of working with these awesome projects
             </p>
           </div>
-          <div className={"flex gap-14 mt-10 px-32 "}>
+          <div className={"flex flex-col xl:flex-row gap-14 mt-10 px-32 "}>
             <div className="flex flex-col items-center bg-black  border border-red-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
               <LazyLoadImage
                 className="object-cover ml-4 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
