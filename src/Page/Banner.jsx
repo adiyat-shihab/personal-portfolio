@@ -28,6 +28,7 @@ export const Banner = () => {
               " heading font-bold lg:text-3xl  font-tomorrow xl:text-5xl uppercase xl:leading-[80px] text-white"
             }
           >
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             Hi there <br /> I'M <br className={"xl:hidden"} />
             <span className={" text-red-600"}>Adiyat Shihab</span>
           </h1>
